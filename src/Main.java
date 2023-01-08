@@ -5,6 +5,7 @@ import service.GroupService;
 import service.StudentService;
 import service.TeacherService;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -54,14 +55,14 @@ public class Main {
 
                                     }
                                     case 2->{
-
+                                        System.out.println(studentService.StudentList(name, phoneNumber));
                                     }
 
 
                                     case 3->{
-                                        System.out.println("Enter teacher Name: ");
-                                            String  teacherName=scannerStr.nextLine();
-                                        System.out.println("Enter Experience: ");
+                                        System.out.println("Enter Teacher Name: ");
+                                        String teacherName=scannerStr.nextLine();
+                                        System.out.println("Enter experience: ");
                                         int experience=scannerInt.nextInt();
                                         System.out.println("Enter salary: ");
                                         int salary=scannerInt.nextInt();
@@ -71,10 +72,7 @@ public class Main {
                                     case 4->{
 
                                     }
-
-
                                 }
-
 
 
                             }
